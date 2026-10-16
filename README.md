@@ -412,7 +412,7 @@ The full dataset is not included in this repository because of its large size.
 
 ### 3. Activate the Environment on Windows
 
-    .\.venv\Scripts\Activate.ps1
+    ..venvScriptsActivate.ps1
 
 ### 4. Install Dependencies
 
@@ -514,6 +514,25 @@ Final regression status:
 
 ---
 
+## Dashboard Screenshots
+
+### 1. Overview
+![Overview dashboard](screenshots/01-overview.png)
+
+### 2. Traffic Analysis
+![Traffic Analysis dashboard](screenshots/02-traffic-analysis.png)
+
+### 3. Anomaly Detection
+![Anomaly Detection dashboard](screenshots/03-anomaly-detection.png)
+
+### 4. Risk Analysis
+![Risk Analysis dashboard](screenshots/04-risk-analysis.png)
+
+### 5. Suspicious Flows
+![Suspicious Flows dashboard](screenshots/05-suspicious-flows.png)
+
+---
+
 ## Author
 
 **Md Sakib Hasan**
@@ -530,4 +549,10 @@ https://github.com/mdsakibhasan-cs
 ## Repository
 
 https://github.com/mdsakibhasan-cs/Network-Traffic-Analyzer
+
+
+
+
+
+
 
