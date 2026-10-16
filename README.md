@@ -514,6 +514,10 @@ Final regression status:
 
 ---
 
+## 🚀 Live Demo
+
+👉 [Open the Live Dashboard](https://network-traffic-analyzer-pro.streamlit.app)
+
 ## Dashboard Screenshots
 
 ### 1. Overview
