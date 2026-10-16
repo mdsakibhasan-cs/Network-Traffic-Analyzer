@@ -5,3 +5,5 @@ __pycache__/
 .streamlit/
 models/*.joblib
 models/*.pkl
+
+data/raw/
