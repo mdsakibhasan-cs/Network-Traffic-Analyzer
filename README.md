@@ -516,7 +516,7 @@ Final regression status:
 
 ## Author
 
-**Hasan Md Sakib**
+**Md Sakib Hasan**
 
 Computer Science and Technology  
 Nantong University
@@ -530,3 +530,4 @@ https://github.com/mdsakibhasan-cs
 ## Repository
 
 https://github.com/mdsakibhasan-cs/Network-Traffic-Analyzer
+
