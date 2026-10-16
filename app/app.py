@@ -33,32 +33,15 @@ st.caption(
 
 @st.cache_data
 def load_dataset():
-    file_path = (
-        "data/raw/MachineLearningCVE/"
-        "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv"
-    )
+    file_path = "data/cic_ids2017_sample.csv"
 
     df = pd.read_csv(file_path)
     df.columns = df.columns.str.strip()
+    df["Label"] = df["Label"].astype(str).str.strip()
 
-    benign = df[
-        df["Label"].astype(str).str.strip() == "BENIGN"
-    ].sample(n=1000, random_state=42)
-
-    ddos = df[
-        df["Label"].astype(str).str.strip() == "DDoS"
-    ].sample(n=1000, random_state=42)
-
-    data = (
-        pd.concat([benign, ddos])
-        .sample(frac=1, random_state=42)
-        .reset_index(drop=True)
-    )
-
-    return data
+    return df.sample(frac=1, random_state=42).reset_index(drop=True)
 
 
-@st.cache_resource
 def run_ml_pipeline():
 
     df = load_dataset()
@@ -455,5 +438,7 @@ elif page == "Suspicious Flows":
         width='stretch',
         hide_index=True,
     )
+
+
 
 
